@@ -1,0 +1,16 @@
+.blocker {
+    z-index: 9999 !important;
+    @include media(mb) {
+        padding: 12px;
+    }
+}
+
+div#preview-modal {
+    max-width: 1360px;
+    padding: 50px;
+    border-radius: 0;
+    @include media(mb) {
+        padding: 30px 10px;
+        width: 100%;
+    }
+}

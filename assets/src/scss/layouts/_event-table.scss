@@ -1,0 +1,57 @@
+th {
+    &.#{$prefix}-event-date,
+    &.#{$prefix}-event-time {
+        width: 140px;
+        @include media(mb) {
+            width: auto;
+        }
+    }
+
+    &.#{$prefix}-event-status,
+    &.#{$prefix}-event-city {
+        width: 165px;
+        @include media(mb) {
+            width: auto;
+        }
+    }
+
+    &.#{$prefix}-event-id {
+        width: 165px;
+        @include media(mb) {
+            width: auto;
+        }
+    }
+
+    &.#{$prefix}-event-status {
+        text-align: right;
+    }
+
+    &.#{$prefix}-event-name {
+        width: 180px;
+        @include media(mb) {
+            width: auto;
+        }
+    }
+}
+
+td {
+    &.right-text {
+        padding-right: 10px;
+        justify-content: flex-end;
+    }
+}
+
+.luft-view-more {
+    background: $color_primary;
+    color: #fff !important;
+    border-radius: 25px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    transition: all .3s;
+    &:hover {
+        background: $color_green;
+    }
+}
